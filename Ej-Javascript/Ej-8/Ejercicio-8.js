@@ -1,4 +1,8 @@
-let array = [1, 2, 3, 4, 5, 6];
+let array = [1, 2, 3, 4, 5];
+
+// Solucion 1
+
+/*
 var cont = 0;
 
 var cuantosCumplen = function (){
@@ -9,5 +13,12 @@ var cuantosCumplen = function (){
     }
     return cont;
 }
-
 console.log(cuantosCumplen());
+*/
+
+// Solucion 2
+
+var even = (element) => element % 2 === 0;
+var cuantosCumplen = array.filter(even);
+
+console.log(cuantosCumplen.length);
